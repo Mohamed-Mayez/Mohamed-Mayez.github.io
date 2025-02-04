@@ -1,0 +1,443 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    font-family: "asap",sans-serif;
+    background-color: var(--background-color);
+}
+a
+{
+    color: var(--link-color);
+    text-decoration: none;
+
+}
+:root
+{
+    --text-color:#1a1c20;
+    --link-color:#4a76ee;
+    --background-color:#eeeff1;
+}
+/*Navbar*/
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+    height: 80px;
+    box-shadow: 1px 1px 5px -2px var(--text-color);
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: var(--background-color);
+}
+nav .left a
+{
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 700;
+}
+nav .right a
+{
+    color: var(--text-color);
+    margin: 0 10px;
+}
+nav .right a:last-child
+{
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+nav .right a span
+{
+    margin-left: 5px;
+}
+/*hero section*/
+main
+{
+    margin-top: 13rem;
+}
+.hero-section
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 50px;
+    margin: 50px 0;
+    gap: 40px;
+    margin-bottom: 100px;
+}
+.hero-section .text
+{
+    flex: 5;
+}
+.hero-section .headshot
+{
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+.hero-section .text h2
+{
+    font-size: 45px;
+}
+.hero-section .text .links
+{
+    margin-top: 25px;
+}
+.hero-section .text a
+{
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin:10px 0;
+    transition: 0.1s;
+}
+.hero-section .text a:hover
+{
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+}
+.hero-section .headshot img
+{
+    width: 350px;
+    border-radius: 50%;
+}
+/*skills section*/
+.skills-section
+{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+.skills-section h2
+{
+    text-align: center;
+    font-size: 35px;
+} 
+.skills-section .skills-container
+{
+    
+    width: 60%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.skills-section .skills-container .skill-box
+{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 30%;
+    background-color: aliceblue;
+    transition: 0.1s;
+}
+.skills-section .skills-container .skill-box:hover
+{
+    transform: translate(5px, -5px);
+    box-shadow: 1px 1px 5px 0px var(--text-color);
+}
+.skills-section .skills-container .skill-box img
+{
+    width: 70%;
+}
+.service-section
+{
+    margin-top: 20px;
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+.service-section h2
+{
+    text-align: center;
+    font-size: 35px;
+}
+.service-section .service-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 25px;
+
+}
+.service-section .service-container .card
+{
+    width: 40%;
+    text-align: left;
+    margin: 10px;
+    background-color: #fffffc;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    transition: 0.1s;
+  
+}
+.service-section .service-container .card:hover
+{
+    transform: translate(5px, -5px);
+    box-shadow: 1px 1px 5px 0px var(--text-color);
+}
+.service-section .service-container .card img
+{
+    width: 60%;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.service-section .service-container .card p
+{
+    width: 60%;
+    margin: 10px auto;
+    
+}
+
+/* project section*/
+.project-section
+{
+    margin-top: 20px;
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+.project-section h2
+{
+    text-align: center;
+    font-size: 35px;
+}
+.project-section .project-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 25px;
+
+}
+.project-section .project-container .card
+{
+    width: 40%;
+    text-align: left;
+    margin: 10px;
+    background-color: #fffffc;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    transition: 0.1s;
+  
+}
+.project-section .project-container .card:hover
+{
+    transform: translate(5px, -5px);
+    box-shadow: 1px 1px 5px 0px var(--text-color);
+}
+.project-section .project-container img
+{
+    width: 60%;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.project-section .project-container .card p
+{
+    width: 100%;
+    padding:20px;
+}
+.project-section .project-container .card a
+{
+    font-size: 16px;
+    font-family: "asap",sans-serif;
+    color: white;
+    background-color: var(--link-color);
+    border: none;
+    padding: 10px;
+    transition: 0.1s;
+    width: 40%;
+    margin:10px auto;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid black;
+}
+.project-section .project-container .card a:hover
+{
+    filter: brightness(1.1);
+}
+/*contact section*/
+.contact-section
+{
+    padding: 0 50px;
+    margin-bottom:100px ;
+}
+.contact-section h2
+{
+    font-size: 35px;
+}
+.contact-section .group
+{
+    display: flex;
+    gap: 50px;
+}
+.contact-section .group .text
+{
+    flex: 3;
+    margin-top: 20px;
+}
+.contact-section .group form
+{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+.contact-section .group form input,
+.contact-section .group form textarea
+{
+    font-family: "asap",sans-serif;
+    border:2px solid var(--link-color);
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    resize: none;
+    outline: none;
+}
+.contact-section .group form button
+{
+    font-size: 16px;
+    font-family: "asap",sans-serif;
+    color: white;
+    background-color: var(--link-color);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.contact-section .group form button:hover
+{
+    filter: brightness(0.9);
+}
+footer
+{
+    margin-top: 50px;
+    background-color: var(--text-color);
+
+}
+footer p
+{
+    color: #fffffc;
+    padding:10px 0 ;
+    text-align: center;
+}
+/*media*/
+@media (max-width:900px)
+{
+    /*section hero*/
+    .hero-section .text h2
+    {
+        font-size: 35px;
+    }
+}
+@media (max-width:807px)
+{
+     /*section hero*/
+    .hero-section
+    {
+        flex-direction: column-reverse;
+    }
+    .hero-section .headshot img
+    {
+        width: 300px;
+    }
+    /*contact */
+    .contact-section .group
+    {
+        flex-direction: column;
+    }
+}
+@media (max-width:600px)
+{
+    /*navbar*/
+    nav
+    {
+        padding: 0 20px;
+    }
+    nav .right a
+    {
+        font-size: 22px;
+    }
+    nav .right a:last-child
+    {
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+    }
+    nav .right a span
+    {
+        display: none;
+    }
+    /*hero section*/
+    .hero-section
+    {
+        padding: 0 20px;
+    }
+    .hero-section .text h2
+    {
+        font-size: 30px;
+    }
+    /*services*/
+    .service-section
+    {
+        padding: 0 20px;
+    }
+    /*skils*/
+    .skills-section
+    {
+        padding: 0 20px;
+    }
+    .project-section
+    {
+        padding: 0 20px;
+    }
+    .project-section .project-container .card p
+    {
+       font-size: 15px;
+       width: 100%;
+       padding: 0 10px;
+    }
+    /*contact */
+    .contact-section
+    {
+        padding: 0 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: "asap";
+    src: url(../webfonts/fonts/Asap/Asap-Italic-VariableFont_wdth\,wght.ttf);
+}
